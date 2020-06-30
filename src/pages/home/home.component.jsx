@@ -8,7 +8,7 @@ import ParticleBg from '../../components/particles/particles.component'
 const HomePage =({simpleBtn})=> {
 
     return (
-        <Grid className='home-page'>
+        <div className='home-page'>
         <ParticleBg/>
         <div  className='text-box'>
                 <h2 className='title'>I can help you build <br/>your next full stack applications</h2>
@@ -34,7 +34,7 @@ const HomePage =({simpleBtn})=> {
             <li className='puzzle-item7 '><Icon name='database'/></li>
             </ul>
         </div>
-        </Grid>
+        </div>
 
     )
 }
