@@ -83,7 +83,7 @@ displayEmailNotification=(message,messageType)=>{
                     })
          const {email,subject,message} = this.state;
             axios
-            .post(`http://localhost:8080/api/email`,{email,subject,message})
+            .post(`https://backendk.herokuapp.com/email`,{email,subject,message})
             .then(response => {
                 setTimeout(()=>{
                     this.setState({
