@@ -1,0 +1,160 @@
+$base-color: #c6538c;
+$base-color1:#4e97c9;
+$base-color3:#59bb97;
+$base-color4:#54bd52;
+$base-color5:#d82144;
+$base-color6:#3c4c5c;
+$base-color2:#20cec9;
+$base-color7:#ffb600;
+$base-color8:#ff6666;
+$base-color9:#5046af;
+$base-color10:#6666cc;
+
+
+
+
+@mixin puzzle-item($clr) {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    background:$clr;
+
+    i{
+        
+        .icon{
+            width: 50px;
+        }
+    }
+  }
+.home-page{
+    display: flex;
+    width: 100vw;
+
+    font-size: 1.5rem;
+    color: #fff;
+ 
+
+
+
+.text-box{
+    margin: 20px auto;;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+        justify-content: center;
+        @media (min-width: 320px) and (max-width: 480px) {
+ 
+            /* For Mobile devices */
+            font-size: 0.7rem;
+            padding: 2% 5%;
+            h2{
+                font-size: 0.8rem,;
+            }
+            }
+            
+        @media (min-width: 481px) and (max-width: 767px) {
+       /* For tablets: */
+            font-size: 1rem;
+            padding: 2% 5%;
+            h2{
+                font-size: 1.3rem,;
+            }
+            
+        }   
+  
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        
+       text-decoration: none;
+       color: white;
+       background-color: #e85861;
+       width: 200px;
+       border: none;
+       background: #3a7999;
+       color: #f2f2f2;
+       padding: 10px;
+       font-size: 18px;
+       border-radius: 5px;
+       position: relative;
+       box-sizing: border-box;
+       transition: all 500ms ease; 
+      
+       @media (min-width: 320px) and (max-width: 480px) {
+ 
+        /* For Mobile devices */
+        font-size: 0.6rem;
+        width:120px ;
+        padding: 5px;
+        }
+        
+    @media (min-width: 481px) and (max-width: 767px) {
+   /* For tablets: */
+   font-size: 0.8rem;
+   width:120px ;
+   padding: 7px;
+    }   
+       &:hover {
+          
+        
+           color: #e85861;
+           font-weight: 700;
+           background: #f2f2f2; ;
+       }
+       span{
+           margin-left: 2%;
+       }
+}
+
+}
+.stack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    
+.puzzle{
+    width: 100px;
+    
+    display: flex;
+    flex-direction: column;
+   
+    margin: 1px;
+
+    .puzzle-item1{
+        @include puzzle-item($base-color);
+    }
+
+    .puzzle-item2{
+        @include puzzle-item($base-color7);
+    }
+
+    .puzzle-item3{
+        @include puzzle-item($base-color6);
+    }
+
+    .puzzle-item4{
+        @include puzzle-item($base-color9);
+    }
+    .puzzle-item5{
+        @include puzzle-item($base-color4);
+    }
+
+    .puzzle-item6{
+        @include puzzle-item($base-color5);
+    }
+
+    .puzzle-item7{
+        @include puzzle-item($base-color8);
+    }
+}
+}
+}
+    

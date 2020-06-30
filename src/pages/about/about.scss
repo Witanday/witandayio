@@ -1,0 +1,55 @@
+.about-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+   
+    
+
+      .about-avatar{
+            width: 300px;
+            height: 300px;
+            background-image: url('../../assets/images/5112.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 250px;
+            background-color: #fff;
+            font-size: 0;
+            border: 0;
+            margin-top: 0;
+            margin-right: 5px;
+       
+}
+
+.about-details{
+    background-color: #fff;
+    padding: 2%;
+    padding-left: 4%;
+    margin: 0;
+    width: 70%;
+    height: 300px;
+
+    h3{
+        margin-bottom: 20px;;
+    }
+    li{
+        margin-bottom: 10px;
+    }
+        ul{
+            margin-bottom: 30px;;
+        }
+    .about-to-projects{
+        color: #222;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        background-color: #3a7999;
+       margin: 0;
+    }
+}
+    
+  
+
+}
