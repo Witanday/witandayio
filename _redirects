@@ -1,6 +1,2 @@
-/*    /index.html   200
-
-
-/about www.witanday.io/about 200!
-/projects www.witanday.io/projects 200!
-/contact www.witanday.io/contact 200!
+/https://www.witanday.io/* https://www.witanday.io/:splat 301!
+/* /index.html 200
