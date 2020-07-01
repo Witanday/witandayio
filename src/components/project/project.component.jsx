@@ -12,7 +12,7 @@ const Project =(  {title, subtutle, descrition, imageUrl, url,technologies })=> 
     return (
         <div className='project'>
             <div className='image'>
-            <img  alt='project-image'src={imageUrl}/>
+            <img  alt='project' src={imageUrl}/>
                
             </div>
             <div className='project-description'>

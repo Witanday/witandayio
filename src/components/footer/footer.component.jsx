@@ -11,7 +11,7 @@ const Footer = ()=>{
     return(
         <div class="footer">
         <div class="container">
-          <div class="small text-center text-muted">`Copyright &copy;  {getYear()}- Witanday.io`</div>
+          <div class="small text-center ">`Copyright &copy;  {getYear()}- Witanday.io`</div>
         </div>
       </div>
     )

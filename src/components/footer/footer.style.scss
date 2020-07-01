@@ -3,10 +3,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #f2f2f2;
+    z-index: 600;
+    background-color: #767676;;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+  
+    font-weight: 600;
     
 }

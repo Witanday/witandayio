@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Icon} from 'semantic-ui-react';
+import { Icon} from 'semantic-ui-react';
 import './home.style.scss';
 
 import CustomButton from '../../components/button/button.component'
@@ -10,6 +10,7 @@ const HomePage =({simpleBtn})=> {
     return (
         <div className='home-page'>
         <ParticleBg/>
+        <div  className="homepage-content">
         <div  className='text-box'>
                 <h2 className='title'>I can help you build <br/>your next full stack applications</h2>
                 <p className='text'>I'm Witanday Kyanga : Web Designer <br/>
@@ -33,6 +34,7 @@ const HomePage =({simpleBtn})=> {
             <ul  className='puzzle'>
             <li className='puzzle-item7 '><Icon name='database'/></li>
             </ul>
+        </div>
         </div>
         </div>
 

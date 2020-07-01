@@ -14,7 +14,7 @@ class Contact extends Component{
         loading:false,
         errors: [],
         success:null,
-        activeButton:false
+ 
 
     }
     isInputValid=(values)=>{
@@ -112,7 +112,7 @@ displayEmailNotification=(message,messageType)=>{
     }
     render(){
 
-        const {loading, success, errors, activeButton, email, subject, message} = this.state;
+        const {loading, success, errors, email, subject, message} = this.state;
         return(
             <Segment>
           

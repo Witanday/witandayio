@@ -1,5 +1,8 @@
 .main-menu{
   background: #fff;
+ 
+ font-weight: 520;
+ font-size: 1.5em;
   width: 100vw;
   height: 65px;
   position: fixed;
@@ -25,10 +28,20 @@ height: 45px;
   .logo{
     display: flex;
     list-style: none;
+    justify-content: center;
+    align-items: center;
     li{
       margin-left: 20px;
       a{
-        color :#222;
+        color :#767676;
+       
+        text-transform: uppercase;
+        font-size: 1em;
+
+        img{
+          height: 35px;
+          width: 35px;
+        }
       }
     }
   }
@@ -55,11 +68,9 @@ display: flex;
       margin-right: 20px;
 
   a{
-    color :#222;
+    color :#767676;
     text-decoration: none;
-  .navLink{
-          
-        }
+ 
       }
 
     }
@@ -67,11 +78,25 @@ display: flex;
 
   .toggleBtn{
     margin-right: 20px;
+   
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .iconBtn{
       cursor: pointer;
       display: none;
-
+     
+      &:before, *:after {
+        box-sizing: inherit;
+        padding: 0;
+        margin: 0;
+        font-size: 100%;
+        color: #767676
+    }
+     
+    
       @media (min-width: 320px) and (max-width: 480px) {
  
         /* For Mobile devices */
