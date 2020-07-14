@@ -56,10 +56,10 @@ displayEmailNotification=(message,messageType)=>{
     const type = messageType === 'error' ? ['red','stop circle', '#ffebee']:['teal','telegram','#f3fae4'];
     return <Message icon   style={{ background:`${type[2]}`}}>
     <Icon name={type[1]}  color={type[0]} />
-    <Message.Content>
-      <Message.Header>Just one second</Message.Header>
+    <div>
+      <div>Just one second</div>
       {message}
-    </Message.Content>
+    </div>
   </Message>
 }
     handleActiveButton=()=>(
@@ -119,7 +119,7 @@ displayEmailNotification=(message,messageType)=>{
           
             <form className='contact-form' onSubmit={this.handleSubmit}>
             <div className='create-contact-details'>
-            {success && this.displayEmailNotification(success, 'sucess')}
+            {success && this.displayEmailNotification(success, 'sucess-message')}
             {errors.length !==0 && this.displayEmailNotification(errors[0].message, 'error')}
             <h2>Get In Touch :</h2>
                 <input type='text'

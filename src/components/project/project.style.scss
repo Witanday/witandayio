@@ -21,6 +21,7 @@ $box-shadow1: 0 1px 2px $shadow1;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
                 svg{
                     fill: $svgcolor;
                     height: $svgHeight;
@@ -31,13 +32,29 @@ $box-shadow1: 0 1px 2px $shadow1;
 
 .header{
 width: 100vw;
-
 display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 
 color: $colorWhite;
+@media (min-width: 320px) and (max-width: 480px) {
+ 
+    /* For Mobile devices */
+    width: auto;
+    height: 100%;
+  
+    background-color: $-bgcolor;
+    }
+    
+@media (min-width: 481px) and (max-width: 767px) {
+/* For tablets: */
+width: auto;
+height: 100%;
+flex-direction: column;
+    background-color: $-bgcolor;
+   
+} 
 
 .header-content{
     width: 900px;
@@ -49,7 +66,20 @@ color: $colorWhite;
     background: $bgcolor1;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    
+    @media (min-width: 320px) and (max-width: 480px) {
+ 
+        /* For Mobile devices */
+        width: auto;
+        height: 80px;
+        flex-direction: column;
+        }
+        
+    @media (min-width: 481px) and (max-width: 767px) {
+    /* For tablets: */
+    width: auto;
+    height: 100px;
+    flex-direction: column;
+    } 
 
     .icon-box{
         width: 50px;
@@ -64,10 +94,35 @@ color: $colorWhite;
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: 320px) and (max-width: 480px) {
+ 
+            /* For Mobile devices */
+            display: none;
+            }
+            
+        @media (min-width: 481px) and (max-width: 767px) {
+        /* For tablets: */
+        display: none;
+        
+        } ;
         svg{
             fill: $bgcolor1;
             height: 2.2em;
             width: 2.2em;
+
+            @media (min-width: 320px) and (max-width: 480px) {
+ 
+                /* For Mobile devices */
+                height: 1.2em;
+                width: 1.2em;
+                }
+                
+            @media (min-width: 481px) and (max-width: 767px) {
+            /* For tablets: */
+            height: 1.2em;
+                width: 1.2em;
+            
+            } ;
         }
     }
 
@@ -76,6 +131,18 @@ color: $colorWhite;
         line-height: 40px;
         text-align: center;
         font-family: 'roboto';
+        @media (min-width: 320px) and (max-width: 480px) {
+ 
+            /* For Mobile devices */
+            font-size: 1em;
+            }
+            
+        @media (min-width: 481px) and (max-width: 767px) {
+        /* For tablets: */
+        width: 80vw;
+        font-size: 1.5em;
+        
+        } ;
     }
 
   
@@ -89,17 +156,26 @@ background-color: $-bgcolor;
 margin-top: 1.2%;
 display: flex;
 justify-content: space-evenly;
-
+        
     .projects-cards{
     width: 500px;
-   
-   
-  
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    @media (min-width: 320px) and (max-width: 480px) {
+ 
+        /* For Mobile devices */
+        width: 310px;
+       
+        }
+        
+    @media (min-width: 481px) and (max-width: 767px) {
+    /* For tablets: */
+    width: 400px;
+    
+    } 
     
     .project-card{
 
@@ -109,6 +185,7 @@ justify-content: space-evenly;
         box-shadow: $box-shadow1;
         border-radius: 10px;
         margin-bottom: 20px;
+  
     img{
         width: 500px;
         
@@ -161,7 +238,16 @@ justify-content: space-evenly;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-
+        @media (min-width: 320px) and (max-width: 480px) {
+ 
+            /* For Mobile devices */
+            display: none;
+            }
+            
+        @media (min-width: 481px) and (max-width: 767px) {
+        /* For tablets: */
+        display: none;
+        } 
         h3{
             font-size: 1.2em;
             color:#050505;

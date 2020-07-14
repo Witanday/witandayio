@@ -7,7 +7,7 @@ const Layout=({children})=>(
     <div className='layout'>
     <div className="header">
     <Header />
-    <di> {children}</di>
+    <div className='children'> {children}</div>
    
     </div>
     </div>)

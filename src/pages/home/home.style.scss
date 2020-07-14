@@ -31,15 +31,22 @@ $base-color10:#6666cc;
     display: flex;
     height: 100vh;
     padding: 5%;
-    height: 100%;
-    flex: 1 1 100%;
     align-self: center;
     flex-wrap: wrap;
     font-size: 1.5em;
     color: #fff;
     background-image: linear-gradient(to right top, #051937, #2b2d53, #51426f, #795889, #a36fa2)!important;
    
+    @media (min-width: 320px) and (max-width: 480px) {
  
+        /* For Mobile devices */
+        height: 90vh;
+        }
+        
+    @media (min-width: 481px) and (max-width: 767px) {
+   /* For tablets: */
+   height: 90vh;
+    } 
   
 .homepage-content{
     width: 100vw;
