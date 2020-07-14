@@ -1,17 +1,15 @@
 .main-menu{
-  background: #fff;
+  background: #ffffff;
  
  font-weight: 520;
- font-size: 1.5em;
+ font-size: 1.2em;
   width: 100vw;
-  height: 65px;
-  position: fixed;
-  top:0;
-  right: 0;
+  height: 60px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 500;
+
   @media (min-width: 320px) and (max-width: 480px) {
  
     /* For Mobile devices */

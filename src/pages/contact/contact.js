@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import serializeForm from 'form-serialize';
 import axios from 'axios'
 import {Button, Message, Segment, Icon} from 'semantic-ui-react'
+import Layout from '../../components/layout/layout'
 
 import './contact.scss'
 
@@ -114,7 +115,7 @@ displayEmailNotification=(message,messageType)=>{
 
         const {loading, success, errors, email, subject, message} = this.state;
         return(
-            <Segment>
+            <Layout>
           
             <form className='contact-form' onSubmit={this.handleSubmit}>
             <div className='create-contact-details'>
@@ -143,7 +144,7 @@ displayEmailNotification=(message,messageType)=>{
                 >submit</Button>
                  </div>
             </form>
-            </Segment>
+            </Layout>
         )
     }
 }

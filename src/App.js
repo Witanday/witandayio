@@ -7,7 +7,7 @@ import HomePage from './pages/home/home.component'
 import ContactPage from './pages/contact/contact'
 import AboutPage from './pages/about/about';
 
-import ProjectPage from './pages/projects/projects.component';
+import ProjectPage from './components/project/project.component';
 class App extends Component{
 
 
@@ -15,16 +15,16 @@ class App extends Component{
 
     return(
       <div  className='main-app'>
-      <Header  />
-        <div className='main-container'>
+      
+     
         <Switch>
-          <Route exact path='/' component={HomePage} />
+        <Route  exact path='/' component={HomePage} />
           <Route  path='/projects' component={ProjectPage} />
           <Route  path='/contact' component={ContactPage} />
           <Route  path='/about' component={AboutPage} />
         </Switch>
       <Footer />
-        </div>
+      
       </div>
     )
 

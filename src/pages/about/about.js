@@ -1,10 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import './about.scss'
+import Layout from '../../components/layout/layout'
 
 
 const AboutPage =()=>(
-
+<Layout>
     <div className='about-page'>
   
           <Link
@@ -20,7 +21,7 @@ const AboutPage =()=>(
             <Link className='about-to-projects' to='/projects'>Take a look at our recent projects...</Link>
           </div>
        
-    </div>
+    </div></Layout>
 );
 
 

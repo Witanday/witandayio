@@ -4,12 +4,14 @@ import './home.style.scss';
 
 import CustomButton from '../../components/button/button.component'
 import ParticleBg from '../../components/particles/particles.component'
+import Layout from '../../components/layout/layout'
 
 const HomePage =({simpleBtn})=> {
 
     return (
+        <Layout>
         <div className='home-page'>
-        <ParticleBg/>
+        
         <div  className="homepage-content">
         <div  className='text-box'>
                 <h2 className='title'>I can help you build <br/>your next full stack applications</h2>
@@ -37,7 +39,7 @@ const HomePage =({simpleBtn})=> {
         </div>
         </div>
         </div>
-
+        </Layout>
     )
 }
 
