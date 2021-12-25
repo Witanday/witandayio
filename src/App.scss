@@ -1,0 +1,48 @@
+html {
+    box-sizing: border-box;
+    font-size: 14px;
+  
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    color: #fff;
+}
+
+
+
+.main-app{
+    background-color: #f2f2f2;
+    color: #222;
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    display: flex;
+    font-family: 'roboto';
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+   
+
+  
+
+    .main-container{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1%;
+        
+
+        
+    }
+
+ 
+}
